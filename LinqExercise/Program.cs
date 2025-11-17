@@ -44,10 +44,10 @@ namespace LinqExercise
                 Console.WriteLine(n);
             }
 
-            foreach (int n in numbersDescend.Take(4))
-            {
-                Console.WriteLine(n);
-            }
+            // foreach (int n in numbersDescend.Take(4))
+            // {
+            //     Console.WriteLine(n);
+            // }
 
             //TODO: Change the value at index 4 to your age, then print the numbers in descending order
             int[] ageIndexFour = numbers.Select((n, index) => index == 4 ? 35 : n).ToArray();
@@ -76,7 +76,7 @@ namespace LinqExercise
 
             //TODO: Add an employee to the end of the list without using employees.Add()
             employees = employees.Append(new Employee { FirstName = "Alan", LastName = "Turing", Age = 113, YearsOfExperience = 87 }).ToList();
-            employees.ToList().ForEach(e => Console.WriteLine($"{e.LastName}, {e.FirstName} Age: {e.Age} Experience YTD: {e.YearsOfExperience}"));
+            // employees.ToList().ForEach(e => Console.WriteLine($"{e.LastName}, {e.FirstName} Age: {e.Age} Experience YTD: {e.YearsOfExperience}"));
 
             Console.WriteLine();
 
